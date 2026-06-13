@@ -1,0 +1,29 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATmega32"</DEVICE>
+ <WORKING_DIR>D:\exe-7-HanieVatani-1400012268035\puls\puls\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\exe-7-HanieVatani-1400012268035\puls\puls\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\avrasm\inc\m32def.inc</FILE>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\avrasm\inc\M32DEF.INC</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\exe-7-HanieVatani-1400012268035\puls\puls\Debug\puls.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>puls.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>puls.map</FILE>
+  <FILE>puls.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <MAIN><FILE>D:\exe-7-HanieVatani-1400012268035\puls\puls\main.asm</FILE><LINE>7</LINE></MAIN>
+  <WAIT><FILE>D:\exe-7-HanieVatani-1400012268035\puls\puls\main.asm</FILE><LINE>16</LINE></WAIT>
+ </LABELS>
+</ASSEMBLER_INFO>

@@ -1,0 +1,34 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATmega32"</DEVICE>
+ <WORKING_DIR>D:\exe-5-HanieVatani-1400012268035\Counter\Counter\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\exe-5-HanieVatani-1400012268035\Counter\Counter\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\avrasm\inc\m32def.inc</FILE>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\avrasm\inc\M32DEF.INC</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\exe-5-HanieVatani-1400012268035\Counter\Counter\Debug\Counter.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Counter.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Counter.map</FILE>
+  <FILE>Counter.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <MAIN><FILE>D:\exe-5-HanieVatani-1400012268035\Counter\Counter\main.asm</FILE><LINE>14</LINE></MAIN>
+  <LOOP><FILE>D:\exe-5-HanieVatani-1400012268035\Counter\Counter\main.asm</FILE><LINE>25</LINE></LOOP>
+  <COUNTER><FILE>D:\exe-5-HanieVatani-1400012268035\Counter\Counter\main.asm</FILE><LINE>33</LINE></COUNTER>
+  <DELAY><FILE>D:\exe-5-HanieVatani-1400012268035\Counter\Counter\main.asm</FILE><LINE>41</LINE></DELAY>
+  <LOOP1><FILE>D:\exe-5-HanieVatani-1400012268035\Counter\Counter\main.asm</FILE><LINE>43</LINE></LOOP1>
+  <LOOP2><FILE>D:\exe-5-HanieVatani-1400012268035\Counter\Counter\main.asm</FILE><LINE>44</LINE></LOOP2>
+  <LOOP3><FILE>D:\exe-5-HanieVatani-1400012268035\Counter\Counter\main.asm</FILE><LINE>45</LINE></LOOP3>
+ </LABELS>
+</ASSEMBLER_INFO>

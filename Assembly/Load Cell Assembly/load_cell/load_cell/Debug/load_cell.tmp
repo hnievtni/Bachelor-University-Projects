@@ -1,0 +1,30 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATmega32"</DEVICE>
+ <WORKING_DIR>D:\exe-8-HanieVatani-1400012268035\load_cell\load_cell\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\exe-8-HanieVatani-1400012268035\load_cell\load_cell\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\avrasm\inc\m32def.inc</FILE>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\avrasm\inc\M32DEF.INC</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\exe-8-HanieVatani-1400012268035\load_cell\load_cell\Debug\load_cell.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>load_cell.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>load_cell.map</FILE>
+  <FILE>load_cell.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <MAIN><FILE>D:\exe-8-HanieVatani-1400012268035\load_cell\load_cell\main.asm</FILE><LINE>7</LINE></MAIN>
+  <LOOP><FILE>D:\exe-8-HanieVatani-1400012268035\load_cell\load_cell\main.asm</FILE><LINE>28</LINE></LOOP>
+  <CONVERSION_WAIT><FILE>D:\exe-8-HanieVatani-1400012268035\load_cell\load_cell\main.asm</FILE><LINE>31</LINE></CONVERSION_WAIT>
+ </LABELS>
+</ASSEMBLER_INFO>
