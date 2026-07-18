@@ -1,0 +1,1 @@
+-w -erf D:/CAD-HW03-HnaieVatani/exe4/exe4/compile/exe4.erf -d D:/CAD-HW03-HnaieVatani/exe4/exe4/compile -s D:/CAD-HW03-HnaieVatani/exe4/library.cfg -j D:/CAD-HW03-HnaieVatani/exe4/exe4/projlib.cfg -work exe4 -O3 -e 100 -work exe4 -2002 D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd 

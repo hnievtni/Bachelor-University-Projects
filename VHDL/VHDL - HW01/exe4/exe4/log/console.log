@@ -1,0 +1,1451 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/exe4.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/TestBench/exe4_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Error: COMP96_0019: TestBench/exe4_TB.vhd : (71, 3): Keyword 'end' expected.
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/TestBench/exe4_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Error: ELBWRITE_0028: TestBench/exe4_TB.vhd : (73, 0): The unresolved signal "X" received values from multiple sources at 73 and 66 lines.
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/TestBench/exe4_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+SetActiveLib -work
+comp -include "$dsn\src\exe4.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+comp -include "$dsn\src\TestBench\exe4_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_exe4 
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6469 kB (elbread=427 elab2=5902 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW03-HnaieVatani\exe4\exe4\src\wave.asdb
+#  6:28 PM, Sunday, December 17, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg Reset
+wave -noreg Clk
+wave -noreg Start
+wave -noreg X
+wave -noreg Z
+wave -noreg done
+wave -noreg R
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe4_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe4 
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW03-HnaieVatani/exe4/exe4/src/wave.asdb'.
+# VSIM: 5 object(s) traced.
+run
+# RUNTIME: Fatal Error: RUNTIME_0067 exe4.vhd (76): Value 16 out of range (0 to 15).
+# KERNEL: Time: 17500 ps,  Iteration: 0,  Instance: /exe4_tb/UUT,  Process: line__45.
+# KERNEL: Stopped at time 17500 ps + 0.
+# VSIM: Error: Fatal error occurred during simulation.
+SetActiveLib -work
+comp -include "$dsn\src\exe4.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+comp -include "$dsn\src\TestBench\exe4_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_exe4 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6469 kB (elbread=427 elab2=5902 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW03-HnaieVatani\exe4\exe4\src\wave.asdb
+#  6:29 PM, Sunday, December 17, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg Reset
+wave -noreg Clk
+wave -noreg Start
+wave -noreg X
+wave -noreg Z
+wave -noreg done
+wave -noreg R
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe4_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe4 
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW03-HnaieVatani/exe4/exe4/src/wave.asdb'.
+# VSIM: 5 object(s) traced.
+run
+# RUNTIME: Fatal Error: RUNTIME_0067 exe4.vhd (76): Value 16 out of range (0 to 15).
+# KERNEL: Time: 17500 ps,  Iteration: 0,  Instance: /exe4_tb/UUT,  Process: line__45.
+# KERNEL: Stopped at time 17500 ps + 0.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/TestBench/exe4_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\exe4.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+comp -include "$dsn\src\TestBench\exe4_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+asim +access +r TESTBENCH_FOR_exe4 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6469 kB (elbread=427 elab2=5903 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW03-HnaieVatani\exe4\exe4\src\wave.asdb
+#  6:30 PM, Sunday, December 17, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg Reset
+wave -noreg Clk
+wave -noreg Start
+wave -noreg X
+wave -noreg Z
+wave -noreg done
+wave -noreg R
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe4_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe4 
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW03-HnaieVatani/exe4/exe4/src/wave.asdb'.
+# VSIM: 5 object(s) traced.
+run
+# RUNTIME: Fatal Error: RUNTIME_0067 exe4.vhd (81): Value 16 out of range (0 to 15).
+# KERNEL: Time: 17500 ps,  Iteration: 0,  Instance: /exe4_tb/UUT,  Process: line__45.
+# KERNEL: Stopped at time 17500 ps + 0.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/exe4.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/TestBench/exe4_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\exe4.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+comp -include "$dsn\src\TestBench\exe4_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_exe4 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6469 kB (elbread=427 elab2=5903 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW03-HnaieVatani\exe4\exe4\src\wave.asdb
+#  7:06 PM, Sunday, December 17, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg Reset
+wave -noreg Clk
+wave -noreg Start
+wave -noreg X
+wave -noreg Z
+wave -noreg done
+wave -noreg R
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe4_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe4 
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW03-HnaieVatani/exe4/exe4/src/wave.asdb'.
+# VSIM: 6 object(s) traced.
+run
+# RUNTIME: Fatal Error: RUNTIME_0067 exe4.vhd (83): Value 16 out of range (0 to 15).
+# KERNEL: Time: 17500 ps,  Iteration: 0,  Instance: /exe4_tb/UUT,  Process: line__46.
+# KERNEL: Stopped at time 17500 ps + 0.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/exe4.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/TestBench/exe4_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\exe4.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+comp -include "$dsn\src\TestBench\exe4_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+asim +access +r TESTBENCH_FOR_exe4 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6470 kB (elbread=427 elab2=5903 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW03-HnaieVatani\exe4\exe4\src\wave.asdb
+#  7:09 PM, Sunday, December 17, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg Reset
+wave -noreg Clk
+wave -noreg Start
+wave -noreg X
+wave -noreg Z
+wave -noreg done
+wave -noreg R
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe4_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe4 
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW03-HnaieVatani/exe4/exe4/src/wave.asdb'.
+# VSIM: 6 object(s) traced.
+run
+# RUNTIME: Fatal Error: RUNTIME_0067 exe4.vhd (87): Value 16 out of range (0 to 15).
+# KERNEL: Time: 17500 ps,  Iteration: 0,  Instance: /exe4_tb/UUT,  Process: line__46.
+# KERNEL: Stopped at time 17500 ps + 0.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/exe4.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/TestBench/exe4_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\exe4.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+comp -include "$dsn\src\TestBench\exe4_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_exe4 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6469 kB (elbread=427 elab2=5903 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW03-HnaieVatani\exe4\exe4\src\wave.asdb
+#  7:10 PM, Sunday, December 17, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg Reset
+wave -noreg Clk
+wave -noreg Start
+wave -noreg X
+wave -noreg Z
+wave -noreg done
+wave -noreg R
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe4_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe4 
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW03-HnaieVatani/exe4/exe4/src/wave.asdb'.
+# VSIM: 6 object(s) traced.
+run
+# RUNTIME: Fatal Error: RUNTIME_0067 exe4.vhd (84): Value 16 out of range (0 to 15).
+# KERNEL: Time: 17500 ps,  Iteration: 0,  Instance: /exe4_tb/UUT,  Process: line__46.
+# KERNEL: Stopped at time 17500 ps + 0.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/exe4.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\exe4.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+comp -include "$dsn\src\TestBench\exe4_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_exe4 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6469 kB (elbread=427 elab2=5903 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW03-HnaieVatani\exe4\exe4\src\wave.asdb
+#  7:13 PM, Sunday, December 17, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg Reset
+wave -noreg Clk
+wave -noreg Start
+wave -noreg X
+wave -noreg Z
+wave -noreg done
+wave -noreg R
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe4_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe4 
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW03-HnaieVatani/exe4/exe4/src/wave.asdb'.
+# VSIM: 6 object(s) traced.
+run
+# RUNTIME: Fatal Error: RUNTIME_0067 exe4.vhd (85): Value 16 out of range (0 to 15).
+# KERNEL: Time: 17500 ps,  Iteration: 0,  Instance: /exe4_tb/UUT,  Process: line__46.
+# KERNEL: Stopped at time 17500 ps + 0.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/exe4.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\exe4.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+comp -include "$dsn\src\TestBench\exe4_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_exe4 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6470 kB (elbread=427 elab2=5903 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW03-HnaieVatani\exe4\exe4\src\wave.asdb
+#  7:14 PM, Sunday, December 17, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg Reset
+wave -noreg Clk
+wave -noreg Start
+wave -noreg X
+wave -noreg Z
+wave -noreg done
+wave -noreg R
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe4_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe4 
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW03-HnaieVatani/exe4/exe4/src/wave.asdb'.
+# VSIM: 6 object(s) traced.
+run
+# RUNTIME: Fatal Error: RUNTIME_0067 exe4.vhd (86): Value 16 out of range (0 to 15).
+# KERNEL: Time: 17500 ps,  Iteration: 0,  Instance: /exe4_tb/UUT,  Process: line__46.
+# KERNEL: Stopped at time 17500 ps + 0.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/exe4.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/exe4.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\exe4.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+comp -include "$dsn\src\TestBench\exe4_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+asim +access +r TESTBENCH_FOR_exe4 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6469 kB (elbread=427 elab2=5903 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW03-HnaieVatani\exe4\exe4\src\wave.asdb
+#  7:17 PM, Sunday, December 17, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg Reset
+wave -noreg Clk
+wave -noreg Start
+wave -noreg X
+wave -noreg Z
+wave -noreg done
+wave -noreg R
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe4_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe4 
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW03-HnaieVatani/exe4/exe4/src/wave.asdb'.
+# VSIM: 6 object(s) traced.
+run
+# RUNTIME: Fatal Error: RUNTIME_0067 exe4.vhd (84): Value 16 out of range (0 to 15).
+# KERNEL: Time: 17500 ps,  Iteration: 0,  Instance: /exe4_tb/UUT,  Process: line__46.
+# KERNEL: Stopped at time 17500 ps + 0.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/exe4.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\exe4.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+comp -include "$dsn\src\TestBench\exe4_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_exe4 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6469 kB (elbread=427 elab2=5903 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW03-HnaieVatani\exe4\exe4\src\wave.asdb
+#  7:19 PM, Sunday, December 17, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg Reset
+wave -noreg Clk
+wave -noreg Start
+wave -noreg X
+wave -noreg Z
+wave -noreg done
+wave -noreg R
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe4_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe4 
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW03-HnaieVatani/exe4/exe4/src/wave.asdb'.
+# VSIM: 6 object(s) traced.
+run
+# RUNTIME: Fatal Error: RUNTIME_0067 exe4.vhd (83): Value 16 out of range (0 to 15).
+# KERNEL: Time: 17500 ps,  Iteration: 0,  Instance: /exe4_tb/UUT,  Process: line__46.
+# KERNEL: Stopped at time 17500 ps + 0.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/exe4.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\exe4.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+comp -include "$dsn\src\TestBench\exe4_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_exe4 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5445 kB (elbread=427 elab2=4879 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW03-HnaieVatani\exe4\exe4\src\wave.asdb
+#  7:20 PM, Sunday, December 17, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg Reset
+wave -noreg Clk
+wave -noreg Start
+wave -noreg X
+wave -noreg Z
+wave -noreg done
+wave -noreg R
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe4_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe4 
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW03-HnaieVatani/exe4/exe4/src/wave.asdb'.
+# VSIM: 1 object(s) traced.
+run
+# RUNTIME: Fatal Error: RUNTIME_0067 exe4.vhd (83): Value 16 out of range (0 to 15).
+# KERNEL: Time: 17500 ps,  Iteration: 0,  Instance: /exe4_tb/UUT,  Process: line__46.
+# KERNEL: Stopped at time 17500 ps + 0.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/exe4.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\exe4.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+comp -include "$dsn\src\TestBench\exe4_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_exe4 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6469 kB (elbread=427 elab2=5903 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW03-HnaieVatani\exe4\exe4\src\wave.asdb
+#  7:21 PM, Sunday, December 17, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg Reset
+wave -noreg Clk
+wave -noreg Start
+wave -noreg X
+wave -noreg Z
+wave -noreg done
+wave -noreg R
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe4_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe4 
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW03-HnaieVatani/exe4/exe4/src/wave.asdb'.
+# VSIM: 1 object(s) traced.
+run
+# RUNTIME: Fatal Error: RUNTIME_0067 exe4.vhd (83): Value 16 out of range (0 to 15).
+# KERNEL: Time: 17500 ps,  Iteration: 0,  Instance: /exe4_tb/UUT,  Process: line__46.
+# KERNEL: Stopped at time 17500 ps + 0.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/exe4.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\exe4.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+comp -include "$dsn\src\TestBench\exe4_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_exe4 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6469 kB (elbread=427 elab2=5903 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW03-HnaieVatani\exe4\exe4\src\wave.asdb
+#  7:22 PM, Sunday, December 17, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg Reset
+wave -noreg Clk
+wave -noreg Start
+wave -noreg X
+wave -noreg Z
+wave -noreg done
+wave -noreg R
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe4_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe4 
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW03-HnaieVatani/exe4/exe4/src/wave.asdb'.
+# VSIM: 1 object(s) traced.
+run
+# RUNTIME: Fatal Error: RUNTIME_0067 exe4.vhd (82): Value 16 out of range (0 to 15).
+# KERNEL: Time: 17500 ps,  Iteration: 0,  Instance: /exe4_tb/UUT,  Process: line__46.
+# KERNEL: Stopped at time 17500 ps + 0.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/exe4.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\exe4.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+comp -include "$dsn\src\TestBench\exe4_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_exe4 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5446 kB (elbread=427 elab2=4880 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW03-HnaieVatani\exe4\exe4\src\wave.asdb
+#  7:32 PM, Sunday, December 17, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg Reset
+wave -noreg Clk
+wave -noreg Start
+wave -noreg X
+wave -noreg Z
+wave -noreg done
+wave -noreg R
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe4_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe4 
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW03-HnaieVatani/exe4/exe4/src/wave.asdb'.
+# VSIM: 7 object(s) traced.
+run
+# RUNTIME: Fatal Error: RUNTIME_0067 exe4.vhd (93): Value 16 out of range (0 to 15).
+# KERNEL: Time: 17500 ps,  Iteration: 0,  Instance: /exe4_tb/UUT,  Process: line__47.
+# KERNEL: Stopped at time 17500 ps + 0.
+# VSIM: Error: Fatal error occurred during simulation.
+run
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/exe4.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Error: COMP96_0143: exe4.vhd : (78, 7): Object "Reset" cannot be written.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/exe4.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Error: COMP96_0143: exe4.vhd : (78, 7): Object "Reset" cannot be written.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/exe4.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\exe4.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+comp -include "$dsn\src\TestBench\exe4_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_exe4 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5446 kB (elbread=427 elab2=4880 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW03-HnaieVatani\exe4\exe4\src\wave.asdb
+#  7:39 PM, Sunday, December 17, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg Reset
+wave -noreg Clk
+wave -noreg Start
+wave -noreg X
+wave -noreg Z
+wave -noreg done
+wave -noreg R
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe4_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe4 
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW03-HnaieVatani/exe4/exe4/src/wave.asdb'.
+# VSIM: 7 object(s) traced.
+run
+# RUNTIME: Fatal Error: RUNTIME_0067 exe4.vhd (88): Value 16 out of range (0 to 15).
+# KERNEL: Time: 17500 ps,  Iteration: 0,  Instance: /exe4_tb/UUT,  Process: line__47.
+# KERNEL: Stopped at time 17500 ps + 0.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/exe4.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/TestBench/exe4_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\exe4.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+comp -include "$dsn\src\TestBench\exe4_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_exe4 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5446 kB (elbread=427 elab2=4880 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW03-HnaieVatani\exe4\exe4\src\wave.asdb
+#  7:42 PM, Sunday, December 17, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg Reset
+# VSIM: No objects matching.
+wave -noreg Clk
+# VSIM: No objects matching.
+wave -noreg Start
+# VSIM: No objects matching.
+wave -noreg X
+# VSIM: No objects matching.
+wave -noreg Z
+# VSIM: No objects matching.
+wave -noreg done
+# VSIM: No objects matching.
+wave -noreg R
+# VSIM: No objects matching.
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe4_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe4 
+SetActiveLib -work
+comp -include "$dsn\src\exe4.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+comp -include "$dsn\src\TestBench\exe4_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_exe4 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5446 kB (elbread=427 elab2=4880 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW03-HnaieVatani\exe4\exe4\src\wave.asdb
+#  7:42 PM, Sunday, December 17, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg Reset
+wave -noreg Clk
+wave -noreg Start
+wave -noreg X
+wave -noreg Z
+wave -noreg done
+wave -noreg R
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe4_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe4 
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW03-HnaieVatani/exe4/exe4/src/wave.asdb'.
+# VSIM: 8 object(s) traced.
+run
+# RUNTIME: Fatal Error: RUNTIME_0067 exe4.vhd (88): Value 16 out of range (0 to 15).
+# KERNEL: Time: 17500 ps,  Iteration: 0,  Instance: /exe4_tb/UUT,  Process: line__47.
+# KERNEL: Stopped at time 17500 ps + 0.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/exe4.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\exe4.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+comp -include "$dsn\src\TestBench\exe4_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+asim +access +r TESTBENCH_FOR_exe4 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5446 kB (elbread=427 elab2=4880 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW03-HnaieVatani\exe4\exe4\src\wave.asdb
+#  7:46 PM, Sunday, December 17, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg Reset
+wave -noreg Clk
+wave -noreg Start
+wave -noreg X
+wave -noreg Z
+wave -noreg done
+wave -noreg R
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe4_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe4 
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW03-HnaieVatani/exe4/exe4/src/wave.asdb'.
+# VSIM: 7 object(s) traced.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/exe4.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\exe4.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+comp -include "$dsn\src\TestBench\exe4_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+asim +access +r TESTBENCH_FOR_exe4 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5446 kB (elbread=427 elab2=4880 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW03-HnaieVatani\exe4\exe4\src\wave.asdb
+#  7:47 PM, Sunday, December 17, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg Reset
+wave -noreg Clk
+wave -noreg Start
+wave -noreg X
+wave -noreg Z
+wave -noreg done
+wave -noreg R
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe4_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe4 
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW03-HnaieVatani/exe4/exe4/src/wave.asdb'.
+# VSIM: 7 object(s) traced.
+run
+# RUNTIME: Fatal Error: RUNTIME_0067 exe4.vhd (88): Value 16 out of range (0 to 15).
+# KERNEL: Time: 17500 ps,  Iteration: 0,  Instance: /exe4_tb/UUT,  Process: line__47.
+# KERNEL: Stopped at time 17500 ps + 0.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/exe4.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/TestBench/exe4_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\exe4.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+comp -include "$dsn\src\TestBench\exe4_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_exe4 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5446 kB (elbread=427 elab2=4880 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW03-HnaieVatani\exe4\exe4\src\wave.asdb
+#  7:47 PM, Sunday, December 17, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg Reset
+wave -noreg Clk
+wave -noreg Start
+wave -noreg X
+wave -noreg Z
+wave -noreg done
+wave -noreg R
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe4_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe4 
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW03-HnaieVatani/exe4/exe4/src/wave.asdb'.
+# VSIM: 7 object(s) traced.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/exe4.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
+acom -O3 -e 100 -work exe4 -2002  $dsn/src/TestBench/exe4_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\exe4.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+comp -include "$dsn\src\TestBench\exe4_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_exe4 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5446 kB (elbread=427 elab2=4880 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW03-HnaieVatani\exe4\exe4\src\wave.asdb
+#  7:49 PM, Sunday, December 17, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg Reset
+wave -noreg Clk
+wave -noreg Start
+wave -noreg X
+wave -noreg Z
+wave -noreg done
+wave -noreg R
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe4_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe4 
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW03-HnaieVatani/exe4/exe4/src/wave.asdb'.
+# VSIM: 7 object(s) traced.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+testbench_for_exe4 testbench_for_exe4
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5446 kB (elbread=427 elab2=4880 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW03-HnaieVatani\exe4\exe4\src\wave.asdb
+#  7:50 PM, Sunday, December 17, 2023
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW03-HnaieVatani/exe4/exe4/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+SetActiveLib -work
+comp -include "$dsn\src\exe4.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/exe4.vhd
+# Compile Entity "exe4"
+# Compile Architecture "exe4" of Entity "exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+comp -include "$dsn\src\TestBench\exe4_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe4/exe4/src/TestBench/exe4_TB.vhd
+# Compile Entity "exe4_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe4_tb"
+# Compile Configuration "TESTBENCH_FOR_exe4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+asim +access +r TESTBENCH_FOR_exe4 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5446 kB (elbread=427 elab2=4880 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW03-HnaieVatani\exe4\exe4\src\wave.asdb
+#  7:50 PM, Sunday, December 17, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg Reset
+wave -noreg Clk
+wave -noreg Start
+wave -noreg X
+wave -noreg Z
+wave -noreg done
+wave -noreg R
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe4_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe4 
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW03-HnaieVatani/exe4/exe4/src/wave.asdb'.
+# VSIM: 7 object(s) traced.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# Waveform file 'D:/CAD-HW03-HnaieVatani/exe4/exe4/src/untitled.awc' connected to 'D:/CAD-HW03-HnaieVatani/exe4/exe4/src/untitled.asdb'.
+# Adding file D:\CAD-HW03-HnaieVatani\exe4\exe4\src\untitled.asdb ... Done
+# Adding file D:\CAD-HW03-HnaieVatani\exe4\exe4\src\untitled.awc ... Done
+# Adding file D:\CAD-HW03-HnaieVatani\exe4\exe4\src\untitled.awc ... Done

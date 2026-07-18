@@ -1,0 +1,6 @@
+249
+~E 1 "../src/exe4.vhd" 25 exe4
+~A 1 "../src/exe4.vhd" 37 exe4
+~E 1 "../src/TestBench/exe4_TB.vhd" 7 exe4_tb
+~A 1 "../src/TestBench/exe4_TB.vhd" 10 TB_ARCHITECTURE
+~C 1 "../src/TestBench/exe4_TB.vhd" 71 testbench_for_exe4

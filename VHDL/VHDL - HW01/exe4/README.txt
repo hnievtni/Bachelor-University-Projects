@@ -1,0 +1,4 @@
+Design a circuit that after activation of Start on the single-bit input X for a 15-bit string, the number of zeros before the first one
+count and output For example, for the string 000000000000101, the output is 12. Inputs include Reset, Clk,
+X, and Start, and the outputs are R (four bits, indicating the number of zeros), Z (when the first one is found, it becomes one for one clock), and done (when Start is activated, it becomes zero and after 15 clocks, it becomes one to show 15-bit data reception is finished.
+Draw the required state machine and describe and simulate the whole circuit in VHDL language.
