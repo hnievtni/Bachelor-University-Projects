@@ -1,0 +1,17 @@
+154
+~E 1 "../src/Processor.vhd" 6 Processor
+~A 1 "../src/Processor.vhd" 10 Processor
+~E 1 "../src/Processor2.vhd" 6 Processor2
+~A 1 "../src/Processor2.vhd" 10 Processor2
+~E 1 "../src/TestBench/processor2_TB.vhd" 5 processor2_tb
+~A 1 "../src/TestBench/processor2_TB.vhd" 10 TB_ARCHITECTURE
+~A 1 "../src/TestBench/processor2_TB.vhd" 8 TB_ARCHITECTURE3
+~E 1 "../src/TestBench/processor_TB.vhd" 5 processor_tb
+~A 1 "../src/TestBench/processor_TB.vhd" 10 TB_ARCHITECTURE
+~E 1 "../src/TestBench/processor_TB2.vhd" 5 processor_tb2
+~A 1 "../src/TestBench/processor_TB2.vhd" 11 tb_architecture
+~A 1 "../src/TestBench/processor_TB2.vhd" 8 TB_ARCHITECTURE2
+~E 1 "../src/TestBench/processor_TB2.vhd" 5 processor_tb_part2
+~A 1 "../src/TestBench/processor_TB2.vhd" 8 TB_ARCHITECTURE
+~C 1 "../src/TestBench/processor_TB.vhd" 49 testbench_for_processor
+~C 1 "../src/TestBench/processor2_TB.vhd" 48 testbench_for_processor2

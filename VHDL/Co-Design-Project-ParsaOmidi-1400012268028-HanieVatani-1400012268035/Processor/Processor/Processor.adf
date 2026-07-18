@@ -1,0 +1,88 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=Processor
+[Library]
+Processor=.\Processor\Processor.lib
+[$LibMap$]
+Processor=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+fileopenfolder=\\Mac\Home\Desktop\Co-Design-Project-ParsaOmidi-1400012268028\Processor\Processor\src\TestBench
+[Files]
+/Processor.vhd=-1
+/Processor2.vhd=-1
+/Part3.asdb=-1
+/Part3.awc=-1
+/Part2.asdb=-1
+/Part2.awc=-1
+/Part1.asdb=-1
+/Part1.awc=-1
+TestBench/processor_TB.vhd=-1
+TestBench/processor_TB_runtest.do=-1
+TestBench/processor2_TB.vhd=-1
+TestBench/processor2_TB_runtest.do=-1
+[Files.Data]
+.\src\Processor.vhd=VHDL Source Code
+.\src\Processor2.vhd=VHDL Source Code
+.\src\Part3.asdb=Accelerated Waveform File
+.\src\Part3.awc=Accelerated Waveform Configuration
+.\src\Part2.asdb=Accelerated Waveform File
+.\src\Part2.awc=Accelerated Waveform Configuration
+.\src\Part1.asdb=Accelerated Waveform File
+.\src\Part1.awc=Accelerated Waveform Configuration
+.\src\TestBench\processor_TB.vhd=VHDL Test Bench
+.\src\TestBench\processor_TB_runtest.do=Macro
+.\src\TestBench\processor2_TB.vhd=VHDL Test Bench
+.\src\TestBench\processor2_TB_runtest.do=Macro
+[HierarchyViewer]
+HierarchyInformation=processor_tb|TB_ARCHITECTURE|0
+ShowHide=ShowTopLevel
+Selected=
+[folders]
+name0=ALINT-PRO Workspaces
+directory0=\\Mac\Home\Desktop\Codes_Project_Mehrvarz_Khouban\Processor\Processor\
+extension0=alintws
+name1=Coverage Databases
+directory1=\\Mac\Home\Desktop\Codes_Project_Mehrvarz_Khouban\Processor\Processor\
+extension1=acdb
+name2=Dll Libraries
+directory2=\\Mac\Home\Desktop\Codes_Project_Mehrvarz_Khouban\Processor\Processor\
+extension2=dll
+name3=Event Lists
+directory3=\\Mac\Home\Desktop\Codes_Project_Mehrvarz_Khouban\Processor\Processor\
+extension3=lst
+name4=HTML Files
+directory4=\\Mac\Home\Desktop\Codes_Project_Mehrvarz_Khouban\Processor\Processor\
+extension4=htm;html
+name5=Log Files
+directory5=\\Mac\Home\Desktop\Codes_Project_Mehrvarz_Khouban\Processor\Processor\
+extension5=log;htm;xml;txt
+name6=Matlab/Simulink Files
+directory6=\\Mac\Home\Desktop\Codes_Project_Mehrvarz_Khouban\Processor\
+extension6=m;mdl;slx
+name7=Memory Files
+directory7=\\Mac\Home\Desktop\Codes_Project_Mehrvarz_Khouban\Processor\Processor\
+extension7=mem;mif;hex
+name8=PDF Files
+directory8=\\Mac\Home\Desktop\Codes_Project_Mehrvarz_Khouban\Processor\Processor\
+extension8=pdf
+name9=Profiler Databases
+directory9=\\Mac\Home\Desktop\Codes_Project_Mehrvarz_Khouban\Processor\Processor\
+extension9=tbp
+name10=Script Files
+directory10=\\Mac\Home\Desktop\Codes_Project_Mehrvarz_Khouban\Processor\Processor\
+extension10=do;tcl;pl
+name11=Waveform Files
+directory11=\\Mac\Home\Desktop\Codes_Project_Mehrvarz_Khouban\Processor\Processor\
+extension11=asdb;awc;asdbc;asdbe
+[Groups]
+TestBench=1
