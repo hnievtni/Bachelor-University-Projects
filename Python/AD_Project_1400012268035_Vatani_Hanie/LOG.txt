@@ -1,0 +1,46 @@
+Graph's info:
+ATM: 1, Non Prioirty ATM, Neighbors list: [('4', 12), ('2', 5), ('12', 4), ('3', 14)]
+ATM: 2, Priority ATM, Neighbors list: [('1', 5), ('10', 12), ('4', 13), ('7', 4)]
+ATM: 3, Non Prioirty ATM, Neighbors list: [('1', 14), ('12', 5), ('5', 19), ('9', 1)]
+ATM: 4, Non Prioirty ATM, Neighbors list: [('1', 12), ('2', 13), ('8', 10), ('6', 11)]
+ATM: 5, Non Prioirty ATM, Neighbors list: [('3', 19), ('11', 2), ('8', 6), ('6', 10)]
+ATM: 6, Non Prioirty ATM, Neighbors list: [('4', 11), ('5', 10), ('7', 8), ('9', 13)]
+ATM: 7, Non Prioirty ATM, Neighbors list: [('6', 8), ('2', 4), ('11', 5), ('12', 19)]
+ATM: 8, Non Prioirty ATM, Neighbors list: [('4', 10), ('5', 6), ('9', 4), ('10', 11)]
+ATM: 9, Non Prioirty ATM, Neighbors list: [('8', 4), ('12', 8), ('6', 13), ('3', 1)]
+ATM: 10, Priority ATM, Neighbors list: [('2', 12), ('13', 14), ('8', 11), ('11', 13)]
+ATM: 11, Priority ATM, Neighbors list: [('5', 2), ('7', 5), ('10', 13), ('13', 18)]
+ATM: 12, Non Prioirty ATM, Neighbors list: [('1', 4), ('3', 5), ('7', 19), ('9', 8)]
+ATM: 13, Non Prioirty ATM, Neighbors list: [('10', 14), ('11', 18)]
+
+Refilling process:
+Start ATM: 10
+ATM: 10, Refilled at time: 0.50, Distance: 0, Path taken: ['10']
+ATM: 2, Refilled at time: 1.20, Distance: 12, Path taken: ['10', '2']
+ATM: 11, Refilled at time: 1.85, Distance: 9, Path taken: ['2', '7', '11']
+ATM: 5, Refilled at time: 2.38, Distance: 2, Path taken: ['11', '5']
+ATM: 8, Refilled at time: 2.98, Distance: 6, Path taken: ['5', '8']
+ATM: 9, Refilled at time: 3.55, Distance: 4, Path taken: ['8', '9']
+ATM: 3, Refilled at time: 4.07, Distance: 1, Path taken: ['9', '3']
+ATM: 12, Refilled at time: 4.65, Distance: 5, Path taken: ['3', '12']
+ATM: 1, Refilled at time: 5.22, Distance: 4, Path taken: ['12', '1']
+ATM: 7, Refilled at time: 5.87, Distance: 9, Path taken: ['1', '2', '7']
+ATM: 6, Refilled at time: 6.50, Distance: 8, Path taken: ['7', '6']
+ATM: 4, Refilled at time: 7.18, Distance: 11, Path taken: ['6', '4']
+ATM: 13, Refilled at time: 8.27, Distance: 35, Path taken: ['4', '8', '10', '13']
+
+Refilling results:
+ATMs in order of refilling: ['10', '2', '11', '5', '8', '9', '3', '12', '1', '7', '6', '4', '13']
+Average time to refill all ATMs: 0.64 hours
+
+Robbery process:
+Start ATM: 1
+ATM: 8, Refilled at time: 4.10, Distance: 10, Path taken: ['4', '8']
+ATM: 9, Refilled at time: 5.14, Distance: 4, Path taken: ['8', '9']
+ATM: 3, Refilled at time: 6.15, Distance: 1, Path taken: ['9', '3']
+ATM: 12, Refilled at time: 7.20, Distance: 5, Path taken: ['3', '12']
+ATM: 1, Refilled at time: 8.24, Distance: 4, Path taken: ['12', '1']
+
+Robbery results:
+ATMs in order of robbing: ['8', '9', '3', '12', '1']
+Average time to rob all ATMs: 1.86 hours
