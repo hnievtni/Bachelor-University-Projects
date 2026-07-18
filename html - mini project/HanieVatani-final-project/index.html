@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="title">
+  <h2>Hanie Vatani</h2>
+  <p>Computer Workshop final project</p>
+</div>
+
+<div class="grid-container">
+  <div class="row">
+    <div class="column-55">
+      <h1 class="large-font"><b>MacBook Pro M2 2022</b></h1>
+      <p id="2022">Features. Supercharged BY M2 - The 13-inch MacBook Pro laptop is a portable powerhouse. Get more done faster with a next-generation 8-core CPU, 10-ore GPU and up to 24GB of unified memory. up to 20 hours of battery life - Go all day and into the night, thanks to the power-efficient performance of the Apple M2 chip.</p>
+      <p id="more-info-2022"></p>
+      <button class="button" onclick="myFunction(2022)">Learn more</button>
+    </div>
+    <div class="column-44">
+        <img src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-13-in-M2-2022.png" width="535" height="671">
+    </div>
+  </div>
+</div>
+
+<div class="grid-container" style="background-color: lightgray">
+  <div class="row">
+    <div class="column-44">
+        <img src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2021-14in.png" width="535" height="671">
+    </div>
+    <div class="column-55">
+      <h1 class="large-font"><b>MacBook Pro 2021</b></h1>
+      <p id="2021">The 2021 MacBook Pro models come in 14.2-inch and 16.2-inch size options and they're equipped with mini-LED displays, more ports, up to 64GB memory, and more powerful Apple silicon chips, the M1 Pro and M1 Max. In short, they are the best MacBook Pro models to date.</p>
+      <p id="more-info-2021"></p>
+      <button class="button" onclick="myFunction(2021)">Learn more</button>
+    </div>
+  </div>
+</div>
+
+<div class="grid-container">
+  <div class="row">
+    <div class="column-55">
+      <h1 class="large-font"><b>MacBook Pro M1 2020</b></h1>
+      <p id="2020">The high-performance cores are designed to offer the best performance for power-intensive single-threaded tasks. The four high-performance cores can work together to offer impressive multithreaded performance that has allowed the M1 Macs to outshine even the highest-end 16-inch MacBook Pro models</p>
+      <p id="more-info-2020"></p>
+      <button class="button" onclick="myFunction(2020)">Learn more</button>
+    </div>
+    <div class="column-44">
+        <img src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macbookpro/macbook-pro-2020-late-13in-device.jpg" width="535" height="671">
+    </div>
+  </div>
+</div>
+
+<script>
+function myFunction(id) {
+    if (id == 2022) { 
+        document.getElementById("more-info-2022").innerHTML = "Colors: Silver, Space Gray<br>Chip: Apple M2 chip<br>Display: Retina Display, 13.3-inch<br>Battery: Up to 20 hours<br>Memory: 8GB<br>Storage: 256GB SSD<br>Camera: 720p FaceTime HD camera";
+    }
+    else if (id == 2021) {
+        document.getElementById("more-info-2021").innerHTML = "Colors: Silver, Space Gray<br>Chip: Apple M1 pro chip<br>Display: Liquid Retina Display, 14.2-inch<br>Battery: Up to 17 hours<br>Memory: 16GB<br>Storage: 512GB SSD<br>Camera: 1080p FaceTime HD camera";
+    }
+    else if (id == 2020) {
+        document.getElementById("more-info-2020").innerHTML = "Colors: Silver, Space Gray<br>Chip: Apple M1 chip<br>Display: Retina Display, 13.3-inch<br>Battery: Up to 20 hours<br>Memory: 8GB<br>Storage: 256GB SSD<br>Camera: 720p FaceTime HD camera";
+    }
+}
+</script>
+
+</body>
+</html>
