@@ -1,0 +1,55 @@
+#include <mega16.h>
+#include <delay.h>
+
+void main(void)
+{
+DDRA = 0XFF; //LEDs
+PORTA = 0X00;
+DDRC = 0XFF; //7SEGs
+PORTC = 0X00;
+DDRD = 0XFF; //7SEGs
+PORTD = 0X00;
+
+while (1)
+    {     
+        char code[] = {0b00111111, 0b00000110, 0b01011011, 0b01001111, 0b01100110, 0b01101101, 0b01111101, 0b00001110, 0b01111111, 0b01110011};    
+        int i, j = 0;   
+                                    
+        PORTA = 0b00000100; //GREEN
+        PORTC = code[0]; 
+        for (i = 0; i < 15; i++) {
+            PORTD = code[j];
+            delay_ms(1000);
+            
+            j++;
+            if (j == 10) {
+                PORTC = code[1];
+                j = 0;
+            }
+        }
+        
+        PORTA = 0b00000010; //YELLOW
+        PORTC = code[8];   
+        PORTD = code[8];
+        delay_ms(5000); 
+        
+        PORTA = 0b00000001; //RED
+        PORTC = code[0];
+        j = 0; 
+        for (i = 0; i < 15; i++) {
+            PORTD = code[j];
+            delay_ms(1000);
+            
+            j++;
+            if (j == 10) {
+                PORTC = code[1];
+                j = 0;
+            }
+        } 
+        
+        PORTA = 0b00000010; //YELLOW
+        PORTC = code[8];
+        PORTD = code[8];
+        delay_ms(5000);   
+    }
+}

@@ -1,0 +1,11 @@
+VERSION:3 SOURCE_TIMESTAMP:58B0A271
+NODE:I LEVEL:0 LINE:1 "C:\cvavr\inc\mega16.h"
+NODE:I LEVEL:0 LINE:2 "C:\cvavr\inc\delay.h"
+NODE:F LEVEL:0 LINE:4 "button_start(void)"
+NODE:F LEVEL:0 LINE:14 "button_change(void)"
+NODE:F LEVEL:0 LINE:24 "button_stop(void)"
+NODE:V LEVEL:0 LINE:34 "a -> R5"
+NODE:V LEVEL:0 LINE:34 "out -> R4"
+NODE:V LEVEL:0 LINE:34 "model1 -> R7"
+NODE:V LEVEL:0 LINE:34 "model2 -> R6"
+NODE:F LEVEL:0 LINE:36 "main(void)"

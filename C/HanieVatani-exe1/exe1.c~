@@ -1,0 +1,81 @@
+#include <mega16.h>
+#include <delay.h>
+
+int button_start() {
+    if (PIND.0 == 0) {
+        delay_ms(25);
+        if (PIND.0 == 0) {
+            return 1;
+        }
+    }
+    return 0;
+}
+
+int button_change() {
+    if (PIND.1 == 0) {
+        delay_ms(25);
+        if (PIND.1 == 0) {
+            return 1;
+        }
+    }
+    return 0;
+}
+
+int button_stop() {
+    if (PIND.2 == 0) {
+        delay_ms(25);
+        if (PIND.2 == 0) {
+            return 1;
+        }
+    }
+    return 0;
+}
+
+unsigned char a = 0, out = 0, model1 = 1, model2 = 0;
+
+void main(void)
+{
+DDRB = 0XFF; //OUTPUT
+PORTB = 0X00;
+DDRD = 0X00; //INPUT
+PORTD = 0X07;
+
+while (1)
+    {
+        while (button_start() == 0);
+        delay_ms(200);
+        while (1) {  
+            if (model1 == 1) {
+                out = (1 << a); 
+            }
+            else if (model2 == 1) {
+                out = (128 >> a);
+            }
+            
+            PORTB = out;
+            a++;
+            if (a == 8)
+                a = 0;
+                
+             if (button_change()) {
+                if (model1 == 1) {
+                    model2 = 1;
+                    model1 = 0; 
+                    a = 0;
+                }
+                else if (model2 == 1) {
+                    model1 = 1;   
+                    model2 = 0;
+                    a = 0;
+                }           
+            }
+                    
+            if (button_stop()) {
+                PORTB = 0;
+                break;
+            }
+            delay_ms(50);
+        }
+        delay_ms(200);
+    }
+}
