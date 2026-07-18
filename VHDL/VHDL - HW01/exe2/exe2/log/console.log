@@ -1,0 +1,69 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# Waveform file 'D:/CAD-HW03-HnaieVatani/exe2/exe2/src/untitled.awc' connected to 'D:/CAD-HW03-HnaieVatani/exe2/exe2/src/untitled.asdb'.
+acom -O3 -e 100 -work exe2 -2002  $dsn/src/exe2.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe2/exe2/src/exe2.vhd
+# Compile Entity "exe2"
+# Compile Architecture "exe2" of Entity "exe2"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -e 100 -work exe2 -2002  $dsn/src/TestBench/exe2_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe2/exe2/src/TestBench/exe2_TB.vhd
+# Compile Entity "exe2_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe2_tb"
+# Compile Configuration "TESTBENCH_FOR_exe2"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\exe2.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe2/exe2/src/exe2.vhd
+# Compile Entity "exe2"
+# Compile Architecture "exe2" of Entity "exe2"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+comp -include "$dsn\src\TestBench\exe2_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW03-HnaieVatani/exe2/exe2/src/TestBench/exe2_TB.vhd
+# Compile Entity "exe2_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe2_tb"
+# Compile Configuration "TESTBENCH_FOR_exe2"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_exe2 
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6554 kB (elbread=427 elab2=5987 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW03-HnaieVatani\exe2\exe2\src\wave.asdb
+#  11:18 PM, Thursday, December 14, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg Reset
+wave -noreg clk
+wave -noreg Command
+wave -noreg DataIn
+wave -noreg DataOut
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe2_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe2 
+# VSIM: 5 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW03-HnaieVatani/exe2/exe2/src/wave.asdb'.
+# VSIM: 1 object(s) traced.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# Waveform file 'D:/CAD-HW03-HnaieVatani/exe2/exe2/src/untitled.awc' connected to 'D:/CAD-HW03-HnaieVatani/exe2/exe2/src/untitled.asdb'.
+# Adding file D:\CAD-HW03-HnaieVatani\exe2\exe2\src\untitled.asdb ... Done
+# Adding file D:\CAD-HW03-HnaieVatani\exe2\exe2\src\untitled.awc ... Done

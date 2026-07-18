@@ -1,0 +1,1 @@
+-w -erf D:/CAD-HW03-HnaieVatani/exe1/exe1/compile/exe1.erf -d D:/CAD-HW03-HnaieVatani/exe1/exe1/compile -s D:/CAD-HW03-HnaieVatani/exe1/library.cfg -j D:/CAD-HW03-HnaieVatani/exe1/exe1/projlib.cfg -work exe1 -O3 -e 100 -work exe1 -2002 D:/CAD-HW03-HnaieVatani/exe1/exe1/src/TestBench/exe1_TB.vhd 

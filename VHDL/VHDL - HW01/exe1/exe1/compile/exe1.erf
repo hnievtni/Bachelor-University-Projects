@@ -1,0 +1,6 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: D:/CAD-HW03-HnaieVatani/exe1/exe1/src/TestBench/exe1_TB.vhd" 
+MESSAGE "Compile Entity "exe1_tb"" 
+MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "exe1_tb"" 
+MESSAGE "Compile Configuration "TESTBENCH_FOR_exe1"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]" 

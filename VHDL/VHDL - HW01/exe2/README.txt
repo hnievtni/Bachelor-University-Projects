@@ -1,0 +1,3 @@
+Design a 64-bit shift-register that has Command, Reset, Clk (three-bit) and DataIn (64) inputs.
+bit) and the output is DataOut. The Reset input resets the register asynchronously. Then, when Command equals 001, it stores the input data in the register (at the clock edge). When it becomes 010, it shifts the data in the register one bit to the left. and if it becomes 010, shift the data in the register one bit to the right. Whenever it becomes 101, the data
+It rotates the register one time to the left, and if it is 110, it rotates the data inside the register one time to the right. In other cases, the value of the register remains unchanged.
