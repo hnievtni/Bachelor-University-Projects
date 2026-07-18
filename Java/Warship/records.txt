@@ -1,0 +1,4 @@
+players Name    |  score
+hanie    |  7
+hani    |  6
+hanii    |  6hanie    |  6
