@@ -1,0 +1,5 @@
+|         Patient Name         |    Patient Sickness Type     |   Patient Wallet Inventory   |
+|           tara p3            |          Home Care           |             700$             |
+|         Patient Name         |    Patient Sickness Type     |   Patient Wallet Inventory   |
+|           tara p3            |          Home Care           |             700$             |
+|            eli p3            |          Home Care           |             700$             |

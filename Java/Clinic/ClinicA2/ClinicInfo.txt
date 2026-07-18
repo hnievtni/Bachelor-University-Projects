@@ -1,0 +1,2 @@
+|  ClinicName   |  ClinicType   |  ManagerName  | ManagerSalary |  ManagerUser  |  ManagerPass  |
+|   ClinicA2    |   hame kare   |    hamidi     |     350$      |   hamidi123   |   hamidi123   |

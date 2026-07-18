@@ -1,0 +1,9 @@
+|         Section Name         |         Section Type         |      Receptionist Name       |     Receptionist Salary      |
+|      Diagnostic Section      |          Diagnostic          |           javad p3           |             500              |
+|      Long-Term Section       |          Long-Term           |           nima p3            |             500              |
+|      Emergency Section       |          Emergency           |           ahmad p3           |             500              |
+|         Section Name         |         Section Type         |      Receptionist Name       |     Receptionist Salary      |
+|      Diagnostic Section      |          Diagnostic          |           javad p3           |             500              |
+|      Long-Term Section       |          Long-Term           |           nima p3            |             500              |
+|      Emergency Section       |          Emergency           |           ahmad p3           |             500              |
+|       Primary Section        |           Primary            |          hassan p3           |             500              |

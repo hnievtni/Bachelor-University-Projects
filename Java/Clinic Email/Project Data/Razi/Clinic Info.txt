@@ -1,0 +1,2 @@
+|         Clinic Name          |         Clinic Type          |         Manager Name         |        Manager Salary        |
+|             Razi             |            Common            |           reza p3            |             2000             |

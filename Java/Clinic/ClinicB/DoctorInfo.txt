@@ -1,0 +1,2 @@
+|  DoctorName   |  DoctorType   | DoctorSection | DoctorSalary  |  DoctorVisit  |  DoctorUser   |  DoctorPass   |
+|     kaveh     |    jarahi     |     alef      |     190$      |      40$      |   kavehUser   |   kavehPass   |

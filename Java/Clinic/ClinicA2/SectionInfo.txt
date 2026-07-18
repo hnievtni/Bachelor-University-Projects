@@ -1,0 +1,16 @@
+
+SectionName: salamat
+SectionType: tebbi
+RecepName: reza
+DoctorNames: sahar, arash
+PatientNames: ali, maryam mpf, ghasem
+
+  ***  ***  ***
+
+SectionName: khosusi
+SectionType: ICU
+RecepName: abbas
+DoctorNames: jalal ahmadi
+PatientNames: Null
+
+  ***  ***  ***

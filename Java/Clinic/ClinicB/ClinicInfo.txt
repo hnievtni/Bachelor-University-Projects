@@ -1,0 +1,2 @@
+|  ClinicName   |  ClinicType   |  ManagerName  | ManagerSalary |  ManagerUser  |  ManagerPass  |
+|    ClinicB    |     aadi      |   mohammadi   |     280$      | mohammadiUser | mohammadiPass |

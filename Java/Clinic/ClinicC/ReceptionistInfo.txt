@@ -1,0 +1,3 @@
+|   RecepName   | RecepSection  |  RecepSalary  |   RecepUser   |   RecepPass   |
+|     tina      |    urgent     |     200$      |   tinaUser    |   tinaPass    |
+|    mahmud     |     Null      |     100$      |     Null      |  mahmudPass   |

@@ -1,0 +1,4 @@
+|  PatientName  | SicknessType  | PatientWallet |  PatientUser  |  PatientPass  |
+|      ali      |     ofuni     |      0$       |    aliUser    |    aliPass    |
+|  maryam mpf   |     ofuni     |     290$      |  maryamUser   |  maryamPass   |
+|    ghasem     |     ofuni     |     130$      |  ghasemUser   |  ghasemPass   |

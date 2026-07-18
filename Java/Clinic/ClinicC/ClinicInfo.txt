@@ -1,0 +1,2 @@
+|  ClinicName   |  ClinicType   |  ManagerName  | ManagerSalary |  ManagerUser  |  ManagerPass  |
+|    ClinicC    |     khali     |    gholami    |     350$      |  gholami456   |  gholami456   |

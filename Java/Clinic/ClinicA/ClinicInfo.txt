@@ -1,0 +1,2 @@
+|  ClinicName   |  ClinicType   |  ManagerName  | ManagerSalary |  ManagerUser  |  ManagerPass  |
+|    ClinicA    | shabane ruzi  |    akbari     |     300$      |  akbariUser   |  akbariPass   |

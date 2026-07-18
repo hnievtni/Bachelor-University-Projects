@@ -1,0 +1,8 @@
+
+SectionName: alef
+SectionType: jarahi
+RecepName: zahra shad
+DoctorNames: kaveh
+PatientNames: javad
+
+  ***  ***  ***

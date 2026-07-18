@@ -1,0 +1,2 @@
+|         Clinic Name          |         Clinic Type          |         Manager Name         |        Manager Salary        |
+|           Valiasr            |    round-the-clock Clinic    |          maryam p3           |             2000             |

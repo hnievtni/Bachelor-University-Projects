@@ -1,0 +1,1 @@
+|         Patient Name         |        Sickness Type         |         Doctor Name          |        Visit Payment         |

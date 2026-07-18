@@ -1,0 +1,25 @@
+**ClinicA2 - hame kare
+ &salamat - tebbi - reza - @sahar - @arash - #ali - #maryam mpf - #ghasem
+ &khosusi - ICU - abbas - @jalal ahmadi
+ M_hamidi - 350 - hamidi123 - hamidi123
+ R_reza - salamat - 200 - rezaUser - rezaPass
+ R_abbas - ICU - 100 - abbasUser - abbasPass
+ @sahar - ofuni - salamat - 200 - 30 - saharUser - saharPass
+ @jalal ahmadi - ICU - khosusi - 900 - 90 - jalalUser - jalalPass
+ @arash - ofuni - salamat - 600 - 60 - arashUser - arashPass
+ This line has useless information
+ #ali - ofuni - 0 - aliUser - aliPass
+ #maryam mpf- ofuni - 290 - maryamUser - maryamPass
+ #ghasem - ofuni - 130 - ghasemUser - ghasemPass
+ ++History
+ @sahar - #maryam mpf - 1398/1/27
+ @arash - #ghasem - 1398/3/11
+ @sahar - #ali - 1398/7/27
+
+**ClinicC - khali
+ &azmayeshgah - urgent - tina - #ali
+ M_gholami - 350 - gholami456 - gholami456
+ R_tina - urgent - 200 - tinaUser - tinaPass
+ R_mahmud - - 100 - - mahmudPass
+ @sahand - - - - - - 
+ @arash - - - 600 - 60 - arashUser - arashPass

@@ -1,0 +1,2 @@
+|  PatientName  | SicknessType  | PatientWallet |  PatientUser  |  PatientPass  |
+|     javad     |    jarahi     |     210$      |   javadUser   |   javadPass   |

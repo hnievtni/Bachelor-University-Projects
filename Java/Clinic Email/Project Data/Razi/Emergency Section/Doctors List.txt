@@ -1,0 +1,5 @@
+|         Doctor Name          |         Doctor Type          |        Doctor Salary         |     Doctor VisitPayment      |
+|           nilu p3            |          Emergency           |             1000             |              50              |
+|         Doctor Name          |         Doctor Type          |        Doctor Salary         |     Doctor VisitPayment      |
+|           nilu p3            |          Emergency           |             1000             |              50              |
+|           jafar p3           |          Emergency           |             1000             |              40              |

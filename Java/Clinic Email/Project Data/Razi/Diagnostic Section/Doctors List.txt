@@ -1,0 +1,2 @@
+|         Doctor Name          |         Doctor Type          |        Doctor Salary         |     Doctor VisitPayment      |
+|          hosein p3           |          Diagnostic          |             1000             |              30              |

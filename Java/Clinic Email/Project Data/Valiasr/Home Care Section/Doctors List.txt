@@ -1,0 +1,9 @@
+|         Doctor Name          |         Doctor Type          |        Doctor Salary         |     Doctor VisitPayment      |
+|            ali p3            |          Home Care           |             1000             |              60              |
+|         Doctor Name          |         Doctor Type          |        Doctor Salary         |     Doctor VisitPayment      |
+|            ali p3            |          Home Care           |             1000             |              60              |
+|          somaye p3           |          Home Care           |             1000             |              50              |
+|         Doctor Name          |         Doctor Type          |        Doctor Salary         |     Doctor VisitPayment      |
+|            ali p3            |          Home Care           |             1000             |              60              |
+|          somaye p3           |          Home Care           |             1000             |              50              |
+|           amir p3            |          Home Care           |             1000             |              20              |

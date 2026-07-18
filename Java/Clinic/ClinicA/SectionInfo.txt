@@ -1,0 +1,16 @@
+
+SectionName: salamat
+SectionType: ofuni
+RecepName: reza
+DoctorNames: sahar
+PatientNames: ali, maryam, ghasem asadi
+
+  ***  ***  ***
+
+SectionName: khosusi
+SectionType: ICU
+RecepName: Null
+DoctorNames: jalal ahmadi
+PatientNames: Null
+
+  ***  ***  ***

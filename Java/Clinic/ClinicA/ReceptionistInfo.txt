@@ -1,0 +1,3 @@
+|   RecepName   | RecepSection  |  RecepSalary  |   RecepUser   |   RecepPass   |
+|     reza      |    salamat    |     150$      |   rezaUser    |     Null      |
+|     abbas     |     Null      |     Null      |   abbasUser   |   abbasPass   |

@@ -1,0 +1,4 @@
+|  DoctorName   |  DoctorType   | DoctorSection | DoctorSalary  |  DoctorVisit  |  DoctorUser   |  DoctorPass   |
+|     sahar     |     ofuni     |    salamat    |     200$      |      30$      |   saharUser   |   saharPass   |
+| jalal ahmadi  |      ICU      |    khosusi    |     900$      |      90$      |   jalalUser   |   jalalPass   |
+|     arash     |     ofuni     |    salamat    |     600$      |      60$      |   arashUser   |   arashPass   |
