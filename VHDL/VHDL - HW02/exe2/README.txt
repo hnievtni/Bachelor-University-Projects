@@ -1,0 +1,5 @@
+Suppose we want to install car entry and exit sensors for a parking lot to measure the number of cars entering and exiting
+count separately (two separate counters). Design a state machine that can enter and exit the machine based on the figure below
+which shows the location of the sensors, to recognize. For example, when the car enters, the sequence is like this: at the beginning, every
+Two sensors are off (ab=00), sensor a is on (ab=10) and then sensor b is on (ab=11). Then first sensor a is off (ab=01) and then sensor b is off (00=) ab) (These operations do not necessarily occur in consecutive clocks). After the state machine cycle completes to detect an entry or exit in the state machine, increment the entry or exit counter. The machine can reverse. The state machine is for all states. complete and then write its code snippet.In simulation,
+Show different modes

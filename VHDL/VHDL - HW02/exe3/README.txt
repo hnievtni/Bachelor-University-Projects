@@ -1,0 +1,2 @@
+Implement the output of the following circuit (deb_sw) in VHDL language. Whenever the input changes and remains constant for ten milliseconds
+can change the output. Consider the input clock frequency as 100MHz.

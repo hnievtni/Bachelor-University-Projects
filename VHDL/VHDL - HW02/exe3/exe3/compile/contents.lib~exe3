@@ -1,0 +1,8 @@
+31
+~E 1 "../src/exe3.vhd" 27 exe3
+~A 1 "../src/exe3.vhd" 35 Behavioral
+~E 1 "../src/TestBench/exe3_TB.vhd" 7 exe3_tb
+~A 1 "../src/TestBench/exe3_TB.vhd" 10 TB_ARCHITECTURE
+~E 1 "../src/exe3.vhd" 26 switch_debouncer
+~A 1 "../src/exe3.vhd" 35 Behavioral
+~C 1 "../src/TestBench/exe3_TB.vhd" 42 testbench_for_exe3

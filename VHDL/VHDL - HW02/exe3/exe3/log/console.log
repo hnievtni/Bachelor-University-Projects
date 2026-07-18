@@ -1,0 +1,469 @@
+# Design: Design exe3 already active.
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: C-Synthesis: Not Defined
+# DESIGN: HDL Synthesis: Not Defined
+# DESIGN: Physical Synthesis: Not Defined
+# DESIGN: Implementation: Not Defined
+acom -reorder -O3 -e 100 -work exe3 -2002  $dsn/src/exe3.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/exe3.vhd
+# Compile Entity "switch_debouncer"
+# Compile Architecture "Behavioral" of Entity "switch_debouncer"
+# Top-level unit(s) detected:
+# Entity => switch_debouncer
+# Error: ELBWRITE_0028: exe3.vhd : (65, 0): The unresolved signal "debounce_counter" received values from multiple sources at 65 and 47 lines.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work exe3 -2002  $dsn/src/exe3.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/exe3.vhd
+# Compile Entity "switch_debouncer"
+# Compile Architecture "Behavioral" of Entity "switch_debouncer"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -e 100 -work exe3 -2002  $dsn/src/exe3.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/exe3.vhd
+# Compile Entity "switch_debouncer"
+# Compile Architecture "Behavioral" of Entity "switch_debouncer"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work exe3 -2002  $dsn/src/exe3.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/exe3.vhd
+# Compile Entity "exe3"
+# Compile Architecture "Behavioral" of Entity "exe3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work exe3 -2002  $dsn/src/exe3.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/exe3.vhd
+# Compile Entity "exe3"
+# Error: COMP96_0018: exe3.vhd : (32, 5): Identifier expected.
+# Compile Architecture "Behavioral" of Entity "exe3"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work exe3 -2002  $dsn/src/exe3.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/exe3.vhd
+# Compile Entity "exe3"
+# Compile Architecture "Behavioral" of Entity "exe3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work exe3 -2002  $dsn/src/TestBench/exe3_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/TestBench/exe3_TB.vhd
+# Compile Entity "exe3_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe3_tb"
+# Warning: ELAB1_0026: TestBench/exe3_TB.vhd : (31, 0): There is no default binding for component "exe3". (Port "Vdd" is not on the entity).
+# Error: COMP96_0085: TestBench/exe3_TB.vhd : (40, 61): Time expression expected.
+# Compile Configuration "TESTBENCH_FOR_exe3"
+# Error: COMP96_0209: TestBench/exe3_TB.vhd : (49, 6): Unknown architecture name used in configuration declaration.
+# Compile failure 2 Errors 1 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work exe3 -2002  $dsn/src/TestBench/exe3_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/TestBench/exe3_TB.vhd
+# Compile Entity "exe3_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe3_tb"
+# Warning: ELAB1_0026: TestBench/exe3_TB.vhd : (31, 0): There is no default binding for component "exe3". (Port "Vdd" is not on the entity).
+# Error: DAGGEN_0004: TestBench/exe3_TB.vhd : (42, 110): Next waveform time expression is equal to or less than the current one.
+# Compile Configuration "TESTBENCH_FOR_exe3"
+# Error: COMP96_0209: TestBench/exe3_TB.vhd : (49, 6): Unknown architecture name used in configuration declaration.
+# Compile failure 2 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work exe3 -2002  $dsn/src/TestBench/exe3_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/TestBench/exe3_TB.vhd
+# Compile Entity "exe3_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe3_tb"
+# Error: COMP96_0019: TestBench/exe3_TB.vhd : (43, 18): Keyword 'when' expected.
+# Error: COMP96_0015: TestBench/exe3_TB.vhd : (43, 18): ';' expected.
+# Error: COMP96_0019: TestBench/exe3_TB.vhd : (43, 18): Keyword 'end' expected.
+# Error: COMP96_0016: TestBench/exe3_TB.vhd : (43, 22): Design unit declaration expected.
+# Compile Configuration "TESTBENCH_FOR_exe3"
+# Error: COMP96_0209: TestBench/exe3_TB.vhd : (49, 6): Unknown architecture name used in configuration declaration.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work exe3 -2002  $dsn/src/TestBench/exe3_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/TestBench/exe3_TB.vhd
+# Compile Entity "exe3_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe3_tb"
+# Warning: ELAB1_0026: TestBench/exe3_TB.vhd : (31, 0): There is no default binding for component "exe3". (Port "Vdd" is not on the entity).
+# Compile Configuration "TESTBENCH_FOR_exe3"
+# Error: ELAB1_0030: TestBench/exe3_TB.vhd : (50, 0): Port "Vdd" is on component "exe3" but not on the entity "exe3".
+# Error: COMP96_0203: TestBench/exe3_TB.vhd : (51, 4): Binding indication has neither a generic map aspect nor a port map aspect.
+# Error: ELAB1_0030: TestBench/exe3_TB.vhd : (51, 0): Port "Vdd" is on component "exe3" but not on the entity "exe3".
+# Compile failure 3 Errors 1 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work exe3 -2002  $dsn/src/exe3.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/exe3.vhd
+# Compile Entity "exe3"
+# Compile Architecture "Behavioral" of Entity "exe3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work exe3 -2002  $dsn/src/TestBench/exe3_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/TestBench/exe3_TB.vhd
+# Compile Entity "exe3_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe3_tb"
+# Compile Configuration "TESTBENCH_FOR_exe3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\exe3.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/exe3.vhd
+# Compile Entity "exe3"
+# Compile Architecture "Behavioral" of Entity "exe3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+comp -include "$dsn\src\TestBench\exe3_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/TestBench/exe3_TB.vhd
+# Compile Entity "exe3_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe3_tb"
+# Compile Configuration "TESTBENCH_FOR_exe3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_exe3 
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6463 kB (elbread=427 elab2=5897 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW04-HanieVatani\exe3\exe3\src\wave.asdb
+#  11:53 PM, Friday, December 29, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg CLK
+wave -noreg SW
+wave -noreg debounced_sw
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe3_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe3 
+# VSIM: 3 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW04-HanieVatani/exe3/exe3/src/wave.asdb'.
+# VSIM: 3 object(s) traced.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work exe3 -2002  $dsn/src/exe3.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/exe3.vhd
+# Compile Entity "exe3"
+# Compile Architecture "Behavioral" of Entity "exe3"
+# Error: COMP96_0019: exe3.vhd : (52, 13): Keyword 'end' expected.
+# Error: COMP96_0019: exe3.vhd : (60, 4): Keyword 'end' expected.
+# Error: COMP96_0015: exe3.vhd : (62, 9): ';' expected.
+# Error: COMP96_0016: exe3.vhd : (62, 16): Design unit declaration expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work exe3 -2002  $dsn/src/exe3.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/exe3.vhd
+# Compile Entity "exe3"
+# Compile Architecture "Behavioral" of Entity "exe3"
+# Error: ELBWRITE_0028: exe3.vhd : (61, 0): The unresolved signal "counter" received values from multiple sources at 61 and 46 lines.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work exe3 -2002  $dsn/src/exe3.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/exe3.vhd
+# Compile Entity "exe3"
+# Compile Architecture "Behavioral" of Entity "exe3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work exe3 -2002  $dsn/src/TestBench/exe3_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/TestBench/exe3_TB.vhd
+# Compile Entity "exe3_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe3_tb"
+# Compile Configuration "TESTBENCH_FOR_exe3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\exe3.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/exe3.vhd
+# Compile Entity "exe3"
+# Compile Architecture "Behavioral" of Entity "exe3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
+comp -include "$dsn\src\TestBench\exe3_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/TestBench/exe3_TB.vhd
+# Compile Entity "exe3_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe3_tb"
+# Compile Configuration "TESTBENCH_FOR_exe3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
+asim +access +r TESTBENCH_FOR_exe3 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6463 kB (elbread=427 elab2=5897 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW04-HanieVatani\exe3\exe3\src\wave.asdb
+#  12:03 AM, Saturday, December 30, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg CLK
+wave -noreg SW
+wave -noreg debounced_sw
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe3_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe3 
+# VSIM: 3 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW04-HanieVatani/exe3/exe3/src/wave.asdb'.
+# VSIM: 4 object(s) traced.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work exe3 -2002  $dsn/src/TestBench/exe3_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/TestBench/exe3_TB.vhd
+# Compile Entity "exe3_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe3_tb"
+# Compile Configuration "TESTBENCH_FOR_exe3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\exe3.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/exe3.vhd
+# Compile Entity "exe3"
+# Compile Architecture "Behavioral" of Entity "exe3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+comp -include "$dsn\src\TestBench\exe3_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/TestBench/exe3_TB.vhd
+# Compile Entity "exe3_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe3_tb"
+# Compile Configuration "TESTBENCH_FOR_exe3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_exe3 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6462 kB (elbread=427 elab2=5896 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW04-HanieVatani\exe3\exe3\src\wave.asdb
+#  12:07 AM, Saturday, December 30, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg CLK
+wave -noreg SW
+wave -noreg debounced_sw
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe3_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe3 
+# VSIM: 3 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW04-HanieVatani/exe3/exe3/src/wave.asdb'.
+# VSIM: 4 object(s) traced.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work exe3 -2002  $dsn/src/exe3.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/exe3.vhd
+# Compile Entity "exe3"
+# Compile Architecture "Behavioral" of Entity "exe3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work exe3 -2002  $dsn/src/TestBench/exe3_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/TestBench/exe3_TB.vhd
+# Compile Entity "exe3_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe3_tb"
+# Compile Configuration "TESTBENCH_FOR_exe3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\exe3.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/exe3.vhd
+# Compile Entity "exe3"
+# Compile Architecture "Behavioral" of Entity "exe3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+comp -include "$dsn\src\TestBench\exe3_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/TestBench/exe3_TB.vhd
+# Compile Entity "exe3_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe3_tb"
+# Compile Configuration "TESTBENCH_FOR_exe3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_exe3 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6462 kB (elbread=427 elab2=5895 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW04-HanieVatani\exe3\exe3\src\wave.asdb
+#  12:12 AM, Saturday, December 30, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg CLK
+wave -noreg SW
+wave -noreg debounced_sw
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe3_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe3 
+# VSIM: 3 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW04-HanieVatani/exe3/exe3/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work exe3 -2002  $dsn/src/exe3.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/exe3.vhd
+# Compile Entity "exe3"
+# Compile Architecture "Behavioral" of Entity "exe3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
+acom -O3 -e 100 -work exe3 -2002  $dsn/src/exe3.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/exe3.vhd
+# Compile Entity "exe3"
+# Compile Architecture "Behavioral" of Entity "exe3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]
+acom -O3 -e 100 -work exe3 -2002  $dsn/src/TestBench/exe3_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/TestBench/exe3_TB.vhd
+# Compile Entity "exe3_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe3_tb"
+# Compile Configuration "TESTBENCH_FOR_exe3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\exe3.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/exe3.vhd
+# Compile Entity "exe3"
+# Compile Architecture "Behavioral" of Entity "exe3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+comp -include "$dsn\src\TestBench\exe3_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/TestBench/exe3_TB.vhd
+# Compile Entity "exe3_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe3_tb"
+# Compile Configuration "TESTBENCH_FOR_exe3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+asim +access +r TESTBENCH_FOR_exe3 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5438 kB (elbread=427 elab2=4872 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW04-HanieVatani\exe3\exe3\src\wave.asdb
+#  12:28 AM, Saturday, December 30, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg CLK
+wave -noreg SW
+wave -noreg debounced_sw
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe3_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe3 
+# VSIM: 3 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW04-HanieVatani/exe3/exe3/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work exe3 -2002  $dsn/src/TestBench/exe3_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/TestBench/exe3_TB.vhd
+# Compile Entity "exe3_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe3_tb"
+# Compile Configuration "TESTBENCH_FOR_exe3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\exe3.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/exe3.vhd
+# Compile Entity "exe3"
+# Compile Architecture "Behavioral" of Entity "exe3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+comp -include "$dsn\src\TestBench\exe3_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/CAD-HW04-HanieVatani/exe3/exe3/src/TestBench/exe3_TB.vhd
+# Compile Entity "exe3_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "exe3_tb"
+# Compile Configuration "TESTBENCH_FOR_exe3"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim +access +r TESTBENCH_FOR_exe3 
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5438 kB (elbread=427 elab2=4872 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\CAD-HW04-HanieVatani\exe3\exe3\src\wave.asdb
+#  12:29 AM, Saturday, December 30, 2023
+#  Simulation has been initialized
+wave 
+wave -noreg CLK
+wave -noreg SW
+wave -noreg debounced_sw
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\exe3_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_exe3 
+# VSIM: 3 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/CAD-HW04-HanieVatani/exe3/exe3/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
