@@ -1,0 +1,43 @@
+#include <mega16.h>
+#include <delay.h>
+
+void main(void)
+{
+DDRA = 0XFF; //MATRIX
+PORTA = 0X00;
+DDRD = 0XFF; //7SEG
+PORTD = 0X00;
+
+while (1)
+    {    
+        
+         char matrix1[] = {0b00111100, 0b01000010, 0b10100101, 0b10000001, 0b10100101, 0b10011001, 0b01000010, 0b00111100};                                              
+         char matrix2[] = {0b10000000, 0b11000000, 0b11100000, 0b11110000, 0b11111000, 0b11111100, 0b11111110, 0b11111111};
+         
+         char seg_code1[] = {0b11111111, 0b00001100, 0b01110111, 0b00111111, 0b10001100, 0b10111011, 0b11111011, 0b00001111, 0b11111111, 0b10001111};
+         char seg_code2[] = {0b00000000, 0b00000000, 0b10001000, 0b10001000, 0b10001000, 0b10001000, 0b10001000, 0b00000000, 0b10001000, 0b10001000};  
+           
+         int i, j = 0;
+         
+         for (i = 0; i < 10; i++) {  
+            PORTB = seg_code1[i];
+            PORTD = seg_code2[i];
+            for (j = 0; j < 100; j++) {
+                PORTA = matrix1[j];
+                delay_ms(10); //in total 1000ms delay
+            }
+         }  
+         
+         PORTA = 0b00000000;
+         delay_ms(3000); 
+         
+         for (i = 9; i >= 0; i--) {   
+            PORTB = seg_code1[i];
+            PORTD = seg_code2[i];
+            for (j = 0; j < 100; j++) {
+                PORTA = matrix2[j];
+                delay_ms(10); //in total 1000ms delay
+            }
+         }
+    }
+}
