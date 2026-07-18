@@ -1,0 +1,76 @@
+T-Spice - Tanner SPICE
+Version 2019.2
+License validated.
+Product Release ID: T-Spice Win64 2019.2.20190514.20:23:23
+Copyright (C)1988-2019 Mentor, a Siemens Business
+
+Input folder         = Z:\Desktop\HanieVatani-1400012268035\exe1\
+Output folder        = Z:\Desktop\HanieVatani-1400012268035\exe1\T-Spice1
+
+	Parsing "Z:\Desktop\HanieVatani-1400012268035\exe1\T-Spice1.sp"
+	Including "\\Mac\Home\Desktop\HanieVatani-1400012268035\exe1\mosistsmc180.lib"
+
+Start of T-Spice1.sp
+Loaded BSIM3v31 model library, Berkeley BSIM3 v3.1.0 with extensions
+
+Model Evaluation options:
+          scale = 9e-08
+
+General options:
+        threads = 2
+
+Output options:
+          nomod = 1                      post = 2
+
+Probing options:
+         probev = 1
+
+ Device and node counts:
+              MOSFETs -     104
+    MOSFET geometries -       2
+           Capacitors -      30
+      Voltage sources -       5
+   Subckt Definitions -       5
+     Subckt Instances -      30
+     Unique Instances -       4
+    Model Definitions -       2
+      Computed Models -       2
+    Independent nodes -      52
+       Boundary nodes -       6
+          Total nodes -      58
+
+	Opening simulation database "Z:\Desktop\HanieVatani-1400012268035\exe1\T-Spice1.tsim"
+
+Measure information will be written to file "Z:\Desktop\HanieVatani-1400012268035\exe1\T-Spice1\T-Spice1.measure"
+
+Measurement result summary
+   charge          =   -1.4945p      
+   energy          =    2.6901p      
+   power           =   16.8129f      
+   tpdr_GT         =   10.5460n      
+   tpdf_GT         =  -39.8986n      
+   tpd_GT          =  -14.6763n      
+   riseTime_GT     =  157.5635p      
+   fallTime_GT     =  155.6000p      
+   tpdr_EQ         =   50.6150n      
+   tpdf_EQ         =  305.1212p      
+   tpd_EQ          =   25.4601n      
+   riseTime_EQ     =  146.9723p      
+   fallTime_EQ     =   97.0713p      
+   tpdr_LT         =   40.5859n      
+   tpdf_LT         =   70.2901n      
+   tpd_LT          =   55.4380n      
+   riseTime_LT     =  153.8662p      
+   fallTime_LT     =  147.3780p      
+
+
+Parsing                      0.19 seconds
+Setup                        0.46 seconds
+DC operating point           0.21 seconds
+Transient Analysis          10.35 seconds
+Output                       1.27 seconds
+Overhead                     0.83 seconds
+-----------------------------------------
+Total                       13.31 seconds
+
+Simulation completed

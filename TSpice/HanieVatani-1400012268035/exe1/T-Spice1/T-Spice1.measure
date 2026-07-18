@@ -1,0 +1,20 @@
+Measurement Results
+   charge          =   -1.4945p      
+   energy          =    2.6901p      
+   power           =   16.8129f      
+   tpdr_GT         =   10.5460n      
+   tpdf_GT         =  -39.8986n      
+   tpd_GT          =  -14.6763n      
+   riseTime_GT     =  157.5635p      
+   fallTime_GT     =  155.6000p      
+   tpdr_EQ         =   50.6150n      
+   tpdf_EQ         =  305.1212p      
+   tpd_EQ          =   25.4601n      
+   riseTime_EQ     =  146.9723p      
+   fallTime_EQ     =   97.0713p      
+   tpdr_LT         =   40.5859n      
+   tpdf_LT         =   70.2901n      
+   tpd_LT          =   55.4380n      
+   riseTime_LT     =  153.8662p      
+   fallTime_LT     =  147.3780p      
+
